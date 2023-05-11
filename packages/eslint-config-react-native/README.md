@@ -2,11 +2,11 @@
   <img width="250" src="https://raw.githubusercontent.com/oncoursesystems/.github/master/assets/logo.jpg" />
   <br/><br/>
 
-  # `@oncoursesystems/eslint-config`
-  OnCourse Systems' Sencha ESLint configuration and rules.
+  # `@oncoursesystems/eslint-config-react-native`
+  OnCourse Systems' React Native ESLint configuration and rules.
 
-  <a href="https://www.npmjs.com/package/@oncoursesystems/eslint-config-sencha">
-    <img src="https://img.shields.io/npm/v/@oncoursesystems/eslint-config-sencha.svg" alt="NPM version" />
+  <a href="https://www.npmjs.com/package/@oncoursesystems/eslint-config-react-native">
+    <img src="https://img.shields.io/npm/v/@oncoursesystems/eslint-config-react-native.svg" alt="NPM version" />
   </a>
   <a href="https://github.com/oncoursesystems/eslint-config/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="OnCourse Systems ESLint config is released under the MIT license." />
@@ -18,21 +18,23 @@
 With `npm`:
 
 ```sh
-npm install eslint @oncoursesystems/eslint-config-sencha --save-dev
+npm install eslint @oncoursesystems/eslint-config-react-native --save-dev
 ```
 
 Or using `yarn`:
 
 ```sh
-yarn add eslint @oncoursesystems/eslint-config-sencha -D
+yarn add eslint @oncoursesystems/eslint-config-react-native -D
 ```
 
 ## Setup
 
 Create an `.eslintrc.js` file with the following:
 
-```js
-extends: ['@oncoursesystems/eslint-config-sencha']
+```json
+{
+  "extends": ["@oncoursesystems/eslint-config-react-native"]
+}
 ```
 
 ## Usage

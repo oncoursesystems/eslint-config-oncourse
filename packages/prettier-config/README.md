@@ -2,7 +2,7 @@
   <img width="250" src="https://raw.githubusercontent.com/oncoursesystems/.github/master/assets/logo.jpg" />
   <br/><br/>
 
-  # `@oncoursesystems/eslint-config`
+  # `@oncoursesystems/prettier-config`
   OnCourse Systems' Prettier configuration.
 
   <a href="https://www.npmjs.com/package/@oncoursesystems/prettier-config">

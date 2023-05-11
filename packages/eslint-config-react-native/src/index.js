@@ -1,12 +1,12 @@
 module.exports = {
-  "env": {
-    "react-native/react-native": true
+  env: {
+    'react-native/react-native': true,
   },
   extends: [
     '@oncoursesystems/eslint-config-react',
   ],
   plugins: [
-    "react-native"
+    'react-native',
   ],
   settings: {
     react: {
@@ -17,13 +17,13 @@ module.exports = {
     'no-restricted-imports': [
       'error', {
         message: 'Please use \'styled-components/native\' instead.',
-        name: 'styled-components'
-      }
+        name: 'styled-components',
+      },
     ],
     'react/jsx-no-undef': 0,
     'react/react-in-jsx-scope': 0,
     'react-native/no-raw-text': 'off',
     'react-native/no-unused-styles': 'error',
-    'react-native/split-platform-components': 'error'
+    'react-native/split-platform-components': 'error',
   },
 }

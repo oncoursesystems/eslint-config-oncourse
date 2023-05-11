@@ -2,11 +2,11 @@
   <img width="250" src="https://raw.githubusercontent.com/oncoursesystems/.github/master/assets/logo.jpg" />
   <br/><br/>
 
-  # `@oncoursesystems/eslint-config`
-  OnCourse Systems' base ESLint configuration and rules.
+  # `@oncoursesystems/eslint-config-sencha`
+  OnCourse Systems' Sencha ESLint configuration and rules.
 
-  <a href="https://www.npmjs.com/package/@oncoursesystems/eslint-config-base">
-    <img src="https://img.shields.io/npm/v/@oncoursesystems/eslint-config-base.svg" alt="NPM version" />
+  <a href="https://www.npmjs.com/package/@oncoursesystems/eslint-config-sencha">
+    <img src="https://img.shields.io/npm/v/@oncoursesystems/eslint-config-sencha.svg" alt="NPM version" />
   </a>
   <a href="https://github.com/oncoursesystems/eslint-config/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="OnCourse Systems ESLint config is released under the MIT license." />
@@ -18,21 +18,23 @@
 With `npm`:
 
 ```sh
-npm install eslint @oncoursesystems/eslint-config-base --save-dev
+npm install eslint @oncoursesystems/eslint-config-sencha --save-dev
 ```
 
 Or using `yarn`:
 
 ```sh
-yarn add eslint @oncoursesystems/eslint-config-base -D
+yarn add eslint @oncoursesystems/eslint-config-sencha -D
 ```
 
 ## Setup
 
 Create an `.eslintrc.js` file with the following:
 
-```js
-extends: ['@oncoursesystems/eslint-config-base']
+```json
+{
+  "extends": ["@oncoursesystems/eslint-config-sencha"]
+}
 ```
 
 ## Usage
