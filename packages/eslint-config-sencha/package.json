@@ -1,6 +1,6 @@
 {
     "name": "@oncoursesystems/eslint-config-sencha",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "OnCourse Systems' Sencha ESLint config",
     "keywords": [
         "config",

@@ -1,6 +1,6 @@
 {
   "name": "@oncoursesystems/eslint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Monorepo containing all of OnCourse Systems' ESLint configurations",
   "homepage": "https://github.com/oncoursesystems/eslint-config#readme",

@@ -1,6 +1,6 @@
 {
     "name": "@oncoursesystems/eslint-config-react-native",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "OnCourse Systems' React Native ESLint config",
     "keywords": [
         "config",
