@@ -78,10 +78,10 @@ This project uses [pnpm workspaces](https://pnpm.io/workspaces) to manage multip
 
 ## Release & Publish
 
-Make sure you have authenticated to your npm account using `npm login`.  To publish packages, run the following command to auto-bump the version numbers and then upload the packages to [NPM](https://www.npmjs.com/oncoursesystems):
+Make sure you have authenticated to your npm account using `npm login`.  To publish packages, run the following command:
 
 ```sh
 pnpm run release
 ```
 
-You should also create a new GitHub release and tag the commit with the proper version number
+This will auto-bump the version numbers, then upload the packages to [NPM](https://www.npmjs.com/oncoursesystems). It will also create a new GitHub release with the tagged version.
