@@ -1,0 +1,38 @@
+{
+    "name": "@oncoursesystems/eslint-config-ts",
+    "version": "0.1.0",
+    "description": "OnCourse Systems' TypeScript ESLint config",
+    "keywords": [
+        "config",
+        "eslint",
+        "lint",
+        "typescript",
+        "ts"
+    ],
+    "homepage": "https://github.com/oncoursesystems/eslint-config/tree/master/packages/eslint-config-ts/#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oncoursesystems/eslint-config.git"
+    },
+    "license": "MIT",
+    "main": "src",
+    "scripts": {
+        "lint": "eslint . --ignore-pattern 'test/fixtures/*'"
+    },
+    "dependencies": {
+        "@oncoursesystems/eslint-config-base": "workspace:*",
+        "@typescript-eslint/eslint-plugin": "^5.59.0",
+        "@typescript-eslint/parser": "^5.59.0",
+        "eslint-plugin-jest": "^27.2.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.38.0"
+    },
+    "peerDependencies": {
+        "eslint": "8",
+        "typescript": ">=3.9"
+    },
+    "engines": {
+        "node": ">=14.18"
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@oncoursesystems/eslint-config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo containing all of OnCourse Systems' ESLint configurations",
+  "homepage": "https://github.com/oncoursesystems/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oncoursesystems/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": "OnCourse Systems For Education",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "release": "bumpp -r && pnpm -r publish"
+  },
+  "devDependencies": {
+    "@oncoursesystems/eslint-config": "workspace:*",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.38.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
+  }
+}

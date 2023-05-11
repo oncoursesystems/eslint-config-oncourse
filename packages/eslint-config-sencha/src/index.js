@@ -1,0 +1,27 @@
+module.exports = {
+  extends: [
+    '@oncoursesystems/eslint-config-base',
+    'plugin:@sencha/extjs/recommended',
+  ],
+  rules: {
+    '@sencha/extjs/no-existing-alias-override': 'warn',
+    '@sencha/extjs/no-existing-class-override': 'warn',
+    '@sencha/extjs/no-existing-method-override': 'warn',
+    '@sencha/extjs/override-method-call': 'warn',
+    '@sencha/extjs/no-deprecated-class-usage': 'warn',
+    '@sencha/extjs/no-deprecated-config-usage': 'warn',
+    '@sencha/extjs/no-deprecated-method-call': 'warn',
+    '@sencha/extjs/no-deprecated-method-override': 'warn',
+    '@sencha/extjs/no-deprecated-property-usage': 'warn',
+    '@sencha/extjs/no-private-class-usage': 'warn',
+    '@sencha/extjs/no-private-config-usage': 'warn',
+    '@sencha/extjs/no-private-method-call': 'warn',
+    '@sencha/extjs/no-private-method-override': 'warn',
+    '@sencha/extjs/no-private-property-usage': 'warn',
+    '@sencha/extjs/no-removed-class-usage': 'error',
+    '@sencha/extjs/no-removed-config-usage': 'error',
+    '@sencha/extjs/no-removed-method-call': 'error',
+    '@sencha/extjs/no-removed-method-override': 'error',
+    '@sencha/extjs/no-removed-property-usage': 'error',
+  },
+}

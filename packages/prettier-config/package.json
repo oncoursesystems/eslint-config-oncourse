@@ -1,0 +1,37 @@
+{
+    "name": "@oncoursesystems/prettier-config",
+    "version": "0.1.0",
+    "description": "OnCourse Systems' Prettier config",
+    "keywords": [
+        "config",
+        "prettier",
+        "lint"
+    ],
+    "homepage": "https://github.com/oncoursesystems/eslint-config/tree/master/packages/eslint-prettier-config/#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oncoursesystems/eslint-config.git"
+    },
+    "license": "MIT",
+    "main": "src",
+    "scripts": {
+        "lint": "eslint . --ignore-pattern 'test/fixtures/*'"
+    },
+    "dependencies": {
+        "@babel/core": "^7.21.4",
+        "@babel/parser": "^7.21.4",
+        "@oncoursesystems/eslint-config-base": "workspace:*",
+        "eslint": "^8.38.0",
+        "prettier": "^2.8.7",
+        "react": "^17.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.38.0"
+    },
+    "peerDependencies": {
+        "prettier": "2.8"
+    },
+    "engines": {
+        "node": ">=14.18"
+    }
+}
