@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -56,8 +60,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(eslint@8.38.0)
       jsonc-eslint-parser:
-        specifier: ^2.2.0
-        version: 2.2.0
+        specifier: ^2.4.0
+        version: 2.4.0
       yaml-eslint-parser:
         specifier: ^1.2.0
         version: 1.2.0
@@ -1385,7 +1389,7 @@ packages:
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.38.0)
       eslint: 8.38.0
-      jsonc-eslint-parser: 2.2.0
+      jsonc-eslint-parser: 2.4.0
       natural-compare: 1.4.0
     dev: false
 
@@ -2222,8 +2226,8 @@ packages:
     hasBin: true
     dev: false
 
-  /jsonc-eslint-parser@2.2.0:
-    resolution: {integrity: sha512-x5QjzBOORd+T2EjErIxJnkOEbLVEdD1ILEeBbIJt8Eq/zUn7P7M8qdnWiNVBK5f8oxnJpc6SBHOeeIEl/swPjg==}
+  /jsonc-eslint-parser@2.4.0:
+    resolution: {integrity: sha512-WYDyuc/uFcGp6YtM2H0uKmUwieOuzeE/5YocFJLnLfclZ4inf3mRn8ZVy1s7Hxji7Jxm6Ss8gqpexD/GlKoGgg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       acorn: 8.8.2
