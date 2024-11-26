@@ -2,6 +2,7 @@ import type { OptionsConfig, TypedFlatConfigItem } from '@antfu/eslint-config';
 
 import { reactOverrides, reactPlugins } from './configs/react';
 import { typescript } from './configs/typescript';
+
 import type { Options } from './index';
 
 export default function oncourseOptions(options?: Options): Omit<TypedFlatConfigItem, 'files'> & OptionsConfig {

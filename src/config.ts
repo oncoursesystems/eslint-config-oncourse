@@ -1,6 +1,7 @@
 import { expo } from './configs/expo';
 import { javascript } from './configs/javascript';
 import { sencha } from './configs/sencha';
+
 import type { Configs, Options } from './index';
 
 export default function oncourseConfigs(options?: Options): Configs {
