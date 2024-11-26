@@ -15,10 +15,8 @@ export function javascript(): TypedFlatConfigItem {
       'perfectionist/sort-imports': [
         'error',
         {
-          environment: 'node',
-          groups: [['builtin', 'external'], 'internal', 'parent', 'sibling'],
+          groups: [['builtin', 'external'], 'internal', 'parent', 'sibling', 'index'],
           ignoreCase: false,
-          internalPattern: ['@/**', '~/**'],
           type: 'natural',
         },
       ],

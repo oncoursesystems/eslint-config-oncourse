@@ -6,10 +6,10 @@ import type { FlatConfigComposer } from 'eslint-flat-config-utils';
 import oncourseConfigs from './config';
 import oncourseOptions from './options';
 
-export type Options = {
+export type Options = Omit<TypedFlatConfigItem, 'files'> & OptionsConfig & {
   expo?: boolean;
   sencha?: boolean;
-} & Omit<TypedFlatConfigItem, 'files'> & OptionsConfig;
+};
 export type Composer = FlatConfigComposer<TypedFlatConfigItem, ConfigNames>;
 export type Configs = Array<Awaitable<Array<Linter.Config> | Array<TypedFlatConfigItem> | FlatConfigComposer<any, any> | TypedFlatConfigItem>>;
 
