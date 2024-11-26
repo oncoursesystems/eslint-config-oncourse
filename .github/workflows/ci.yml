@@ -17,7 +17,7 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
-          node-version: lts
+          node-version: lts/*
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Run build
@@ -33,7 +33,7 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
-          node-version: lts
+          node-version: lts/*
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Run build:inspector
@@ -49,7 +49,7 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
-          node-version: lts
+          node-version: lts/*
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Run typecheck
@@ -65,7 +65,7 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
-          node-version: lts
+          node-version: lts/*
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Run lint
@@ -81,7 +81,7 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
-          node-version: lts
+          node-version: lts/*
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Run test
