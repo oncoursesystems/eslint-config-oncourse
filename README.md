@@ -41,10 +41,10 @@ For example:
 
 ```json
 {
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  }
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    }
 }
 ```
 
@@ -54,47 +54,47 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
 
 ```json
 {
-  // Disable the default formatter, use eslint instead
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
+    // Disable the default formatter, use eslint instead
+    "prettier.enable": false,
+    "editor.formatOnSave": false,
 
-  // Auto-fix on save
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
-  },
+    // Auto-fix on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true
+    },
 
-  // Silent the stylistic rules in your IDS, but still auto-fix them
-  "eslint.rules.customizations": [
-    { "rule": "style/*", "severity": "off", "fixable": true },
-    { "rule": "format/*", "severity": "off", "fixable": true },
-    { "rule": "*-indent", "severity": "off", "fixable": true },
-    { "rule": "*-spacing", "severity": "off", "fixable": true },
-    { "rule": "*-spaces", "severity": "off", "fixable": true },
-    { "rule": "*-order", "severity": "off", "fixable": true },
-    { "rule": "*-dangle", "severity": "off", "fixable": true },
-    { "rule": "*-newline", "severity": "off", "fixable": true },
-    { "rule": "*quotes", "severity": "off", "fixable": true },
-    { "rule": "*semi", "severity": "off", "fixable": true }
-  ],
+    // Silent the stylistic rules in your IDS, but still auto-fix them
+    "eslint.rules.customizations": [
+        { "rule": "style/*", "severity": "off", "fixable": true },
+        { "rule": "format/*", "severity": "off", "fixable": true },
+        { "rule": "*-indent", "severity": "off", "fixable": true },
+        { "rule": "*-spacing", "severity": "off", "fixable": true },
+        { "rule": "*-spaces", "severity": "off", "fixable": true },
+        { "rule": "*-order", "severity": "off", "fixable": true },
+        { "rule": "*-dangle", "severity": "off", "fixable": true },
+        { "rule": "*-newline", "severity": "off", "fixable": true },
+        { "rule": "*quotes", "severity": "off", "fixable": true },
+        { "rule": "*semi", "severity": "off", "fixable": true }
+    ],
 
-  // Enable eslint for all supported languages
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html",
-    "markdown",
-    "json",
-    "jsonc",
-    "yaml",
-    "toml",
-    "xml",
-    "css",
-    "less",
-    "scss"
-  ]
+    // Enable eslint for all supported languages
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "markdown",
+        "json",
+        "jsonc",
+        "yaml",
+        "toml",
+        "xml",
+        "css",
+        "less",
+        "scss"
+    ]
 }
 ```
 
@@ -107,7 +107,7 @@ To enable React support, you need to explicitly turn it on:
 import oncourse from '@oncoursesystems/eslint-config';
 
 export default oncourse({
-  react: true,
+    react: true,
 });
 ```
 
@@ -130,7 +130,7 @@ To enable Sencha ExtJS support, you need to explicitly turn it on:
 import oncourse from '@oncoursesystems/eslint-config';
 
 export default oncourse({
-  react: true,
+    react: true,
 });
 ```
 
@@ -155,18 +155,18 @@ Example:
 import oncourse from '@oncoursesystems/eslint-config';
 
 export default oncourse(
-  // Configure integrations here
-  {
-    formatters: false,
-  },
-  // Any additional objects will be passed in as ESLint Flat Configs
-  // The files config is optional, but can be used to specify which files to lint
-  {
-    files: ['src/**/*.ts', 'src/**/*.tsx'],
-    rules: {
-      'ts/typedef': 'off',
-    }
-  },
+    // Configure integrations here
+    {
+        formatters: false,
+    },
+    // Any additional objects will be passed in as ESLint Flat Configs
+    // The files config is optional, but can be used to specify which files to lint
+    {
+        files: ['src/**/*.ts', 'src/**/*.tsx'],
+        rules: {
+            'ts/typedef': 'off',
+        }
+    },
 );
 ```
 
