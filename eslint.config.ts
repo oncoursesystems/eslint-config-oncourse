@@ -1,10 +1,10 @@
 import oncourse from './src';
 
 export default oncourse({
-  type: 'lib',
+    type: 'lib',
 }, {
-  ignores: [
-    'fixtures',
-    '_fixtures',
-  ],
+    ignores: [
+        'fixtures',
+        '_fixtures',
+    ],
 });

@@ -1,27 +1,49 @@
-import { expo } from './configs/expo';
-import { javascript } from './configs/javascript';
-import { sencha } from './configs/sencha';
+import process from 'node:process';
 
-import type { Configs, Options } from './index';
+import type { Configs } from './index';
 
-export default function oncourseConfigs(options?: Options): Configs {
-  return [
-    options?.expo ? expo() : {},
-    javascript(),
-    options?.sencha ? sencha() : {},
-    {
-      files: ['**/.vscode/*.json'],
-      rules: {
-        'jsonc/sort-array-values': [
-          'error',
-          { order: { natural: true, type: 'asc' }, pathPattern: '^.*$' },
-        ],
-        'jsonc/sort-keys': [
-          'error',
-          'asc',
-          { caseSensitive: true, natural: true },
-        ],
-      },
-    },
-  ];
+const SORT_GROUPS = [
+    'type',
+    ['builtin', 'external'],
+    'internal-type',
+    'internal',
+    ['parent-type', 'sibling-type', 'index-type'],
+    ['parent', 'sibling', 'index'],
+    'object',
+    'unknown',
+];
+
+export default function oncourseConfigs(): Configs {
+    return [
+        {
+            rules: {
+                'perfectionist/sort-imports': [
+                    'error',
+                    {
+                        groups: SORT_GROUPS,
+                        internalPattern: ['^#/.+'],
+                        type: 'natural',
+                    },
+                ],
+                'antfu/if-newline': 'off',
+                'antfu/top-level-function': 'off',
+                'curly': ['error', 'multi-line'],
+                'no-console': [
+                    process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+                    {
+                        allow: ['table', 'info', 'warn', 'error'],
+                    },
+                ],
+                'node/prefer-global/process': 'warn',
+                'style/comma-dangle': 'off',
+                'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
+                'style/jsx-one-expression-per-line': 'off',
+                'style/operator-linebreak': [
+                    'error',
+                    'after',
+                    { overrides: { '?': 'before', ':': 'before' } },
+                ],
+            },
+        },
+    ];
 }
